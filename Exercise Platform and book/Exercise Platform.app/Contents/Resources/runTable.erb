@@ -1,0 +1,26 @@
+ <h5>Evaluation</h5>
+ <table id="runTable" class="table table-collapsed table-bordered">
+
+  <tr>
+  <% headers.each do |header| %>
+    <th><%= header %></th>
+  <% end %>
+  </tr>
+
+  <% rows[0].count.times do |index| %>
+     <tr class="<%=rowClasses[index]%>">
+        <% rows.each_with_index do |row, rowIndex| %>
+          <% if headers[rowIndex].include?("Output") %>
+            <td class="monospace-td"><%= row[index] %></td>
+          <% elsif headers[rowIndex].include?("Status") %>
+            <td style="text-align:center;"><%= row[index] %></td>
+          <% else %>
+            <td class="code-td"><%= row[index] %></td>
+          <% end %>
+        <% end %>
+     </tr>
+  <% end %>
+
+</table>
+
+&nbsp;

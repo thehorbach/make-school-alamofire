@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="prism.css">
+  <link rel="stylesheet" type="text/css" href="topSection.css">
+  <script language="javascript" type="text/javascript" src="topSection.js"></script>
+  <script language="javascript" type="text/javascript" src="bootstrap.js"></script>
+  <script language="javascript" type="text/javascript" src="prism.js"></script>
+</head>
+  <body>
+    <!-- CONTENT -->
+  <div class="content-wrapper">
+    <section class="section">
+      <div class="row">
+      <div class="col-md-9">
+      <h3>7.15 Stack</h3>
+
+<p>A stack is a data structure that can perform three operations:</p>
+
+<ul>
+<li><strong>push</strong> adds a value on the top of the stack</li>
+<li><strong>top</strong> returns the value from the top of the stack</li>
+<li><strong>pop</strong> returns the value from the top of the stack and removes it from there</li>
+</ul>
+
+<p>Your task is to implement the <code>push</code>, <code>top</code> and <code>pop</code> operations.
+The most simple way to represent a stack is using an array. Here are some example operations.</p>
+
+<pre><code class="code-example language-swift">var stack: [Int] = []
+
+push(1, &stack) // stack = [1]
+
+push(2, &stack) // stack = [1, 2]
+
+pop(&stack) // 2, stack = [1]
+
+push(3, &stack) // stack = [1, 3]
+
+pop(&stack) // 3, stack = [1]
+
+pop(&stack) // 1, stack = []
+
+pop(&stack) // returns nil because there are no elements in the stack
+// stack = []
+</code></pre>
+
+<p><code>push</code> takes two parameters, the <code>number</code> that will be pushed and the <code>stack</code> as an inout parameter.</p>
+
+<p><code>top</code> takes one parameter, the <code>stack</code>, and returns the value of the top element or nil if the stack is empty - the result type should be and optional integer(<code>Int?</code>)</p>
+
+<p><code>pop</code> takes the <code>stack</code> as an inout parameter, and returns the value of the top element after it removes it. If the <code>stack</code> is empty it should return nil - the result type should be and optional integer(<code>Int?</code>)</p>
+
+      </div>
+      </div>
+    </section>
+  </div>
+    <!-- CONTENT -->
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="prism.css">
+  <link rel="stylesheet" type="text/css" href="topSection.css">
+  <script language="javascript" type="text/javascript" src="topSection.js"></script>
+  <script language="javascript" type="text/javascript" src="bootstrap.js"></script>
+  <script language="javascript" type="text/javascript" src="prism.js"></script>
+</head>
+  <body>
+    <!-- CONTENT -->
+  <div class="content-wrapper">
+    <section class="section">
+      <div class="row">
+      <div class="col-md-9">
+      <h3>5.8 Magic Time!</h3>
+
+<p>Use this magic * operator to solve the next challenge:</p>
+
+<pre><code class="code-example language-swift">func *(string: String, scalar: Int) -> String {
+    let array = Array(count: scalar, repeatedValue: string) 
+    return array.joinWithSeparator("")
+}
+
+print("cat " * 3 + "dog " * 2)
+// cat cat cat dog dog 
+
+var newLine = "\n" * 2
+
+print(newLine)
+//
+//
+</code></pre>
+
+<p>By using <strong>only one</strong> <code>print()</code> statement draw a rectangle of size <code>N x M</code> out of asterisks.</p>
+
+      </div>
+      </div>
+    </section>
+  </div>
+    <!-- CONTENT -->
+  </body>
+</html>

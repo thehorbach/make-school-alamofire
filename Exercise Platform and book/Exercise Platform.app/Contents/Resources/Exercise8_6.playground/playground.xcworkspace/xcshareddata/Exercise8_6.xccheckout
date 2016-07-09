@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>90F33353-74F3-4ED7-9057-A62A01BA9845</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Exercise8_6</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>48870B8BCE95DB82D0771F3879D60B6203AF883A</key>
+		<string>https://github.com/andrei512/PlaygroundEval.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Exercise Platform/Data/Playgrounds/Chapter8Playgrounds/Exercise8_6.playground</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>48870B8BCE95DB82D0771F3879D60B6203AF883A</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/andrei512/PlaygroundEval.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>48870B8BCE95DB82D0771F3879D60B6203AF883A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>48870B8BCE95DB82D0771F3879D60B6203AF883A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PlaygroundEval</string>
+		</dict>
+	</array>
+</dict>
+</plist>

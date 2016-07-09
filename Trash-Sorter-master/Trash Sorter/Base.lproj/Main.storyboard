@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zH3-wa-4Pz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trash Sorter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trash_Sorter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="IQQ-On-KBV">
+                                <rect key="frame" x="125" y="220" width="350" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trash Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1m6-PS-ZYF">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.10588235294117647" green="0.73725490196078436" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Trash Name Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z7H-t5-Q2D">
+                                        <rect key="frame" x="130" y="0.0" width="221" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="20f-eE-Y6h"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC5-4B-pmm">
+                                <rect key="frame" x="205" y="387" width="189" height="37"/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.73725490196078436" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="7b6-6f-Qom"/>
+                                    <constraint firstAttribute="height" constant="37" id="gQr-U4-S9i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Throw Away">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onThrowAwayBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYE-19-zpM"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ruv-rX-PgU">
+                                <rect key="frame" x="125" y="300" width="350" height="38"/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.73725490196078436" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="dmZ-Lp-kv1"/>
+                                    <constraint firstAttribute="width" constant="350" id="uRS-4p-qj6"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Composte"/>
+                                    <segment title="Recyclable"/>
+                                    <segment title="Trash"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sC5-4B-pmm" firstAttribute="top" secondItem="Ruv-rX-PgU" secondAttribute="bottom" constant="50" id="1A4-RT-fMX"/>
+                            <constraint firstItem="IQQ-On-KBV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Sb-oi-RJF"/>
+                            <constraint firstItem="sC5-4B-pmm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Gs-tG-NqZ"/>
+                            <constraint firstItem="IQQ-On-KBV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="CXW-le-IQS"/>
+                            <constraint firstItem="Ruv-rX-PgU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NHe-1C-den"/>
+                            <constraint firstItem="Ruv-rX-PgU" firstAttribute="top" secondItem="IQQ-On-KBV" secondAttribute="bottom" constant="50" id="fgd-oT-uXK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trash Sorter" id="AOM-kp-shz">
+                        <barButtonItem key="rightBarButtonItem" title="View Trash" id="73l-lG-zZF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="bR2-Ae-Lzd" kind="show" identifier="threeTypesSegue" id="q6n-a1-Kmy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="trashNameTextField" destination="z7H-t5-Q2D" id="o4O-Q7-9JM"/>
+                        <outlet property="trashTypeSegmentedControl" destination="Ruv-rX-PgU" id="Gqm-IQ-Dyf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="311"/>
+        </scene>
+        <!--Three TypesVC-->
+        <scene sceneID="h3Y-ql-doS">
+            <objects>
+                <viewController id="bR2-Ae-Lzd" customClass="ThreeTypesVC" customModule="Trash_Sorter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UGx-Sl-vHc"/>
+                        <viewControllerLayoutGuide type="bottom" id="er0-q2-Tp9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2x1-WW-62V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="thi-E3-Mxy">
+                                <rect key="frame" x="100" y="120" width="400" height="360"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="lo7-Gd-UaG">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="composte1" translatesAutoresizingMaskIntoConstraints="NO" id="IN8-Oj-1EU">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="B6d-3Y-CNA"/>
+                                                    <constraint firstAttribute="width" constant="100" id="kND-mw-RbL"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCt-9B-2kr">
+                                                <rect key="frame" x="175" y="0.0" width="225" height="100"/>
+                                                <color key="backgroundColor" red="0.10588235294117647" green="0.73725490196078436" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="6Ib-D6-LbK"/>
+                                                    <constraint firstAttribute="width" constant="225" id="G9O-iB-la0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="42"/>
+                                                <state key="normal" title="Composte">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="composteBtnClicked:" destination="bR2-Ae-Lzd" eventType="touchUpInside" id="5px-cH-wD6"/>
+                                                    <segue destination="dmP-hp-pIh" kind="show" identifier="composteSegue" id="Jpu-3L-b8T"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="wZo-Ix-3vf">
+                                        <rect key="frame" x="0.0" y="130" width="400" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycle1" translatesAutoresizingMaskIntoConstraints="NO" id="omK-RU-9mQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="aBR-Wv-Ueq"/>
+                                                    <constraint firstAttribute="width" constant="100" id="akI-M1-tyj"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNO-BZ-7Qz">
+                                                <rect key="frame" x="175" y="0.0" width="225" height="100"/>
+                                                <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="FMl-pb-n55"/>
+                                                    <constraint firstAttribute="width" constant="225" id="ahf-pC-WoT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="42"/>
+                                                <state key="normal" title="Recyclable">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="recybleBtnClicked:" destination="bR2-Ae-Lzd" eventType="touchUpInside" id="DMs-C9-7nn"/>
+                                                    <segue destination="dmP-hp-pIh" kind="show" identifier="recyclableSegue" id="CLa-pY-gKb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="awE-b0-Voa">
+                                        <rect key="frame" x="0.0" y="260" width="400" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash1" translatesAutoresizingMaskIntoConstraints="NO" id="HeG-DX-8et">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="hEm-Rb-ixi"/>
+                                                    <constraint firstAttribute="width" constant="100" id="rnu-82-vIc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7py-sk-MHe">
+                                                <rect key="frame" x="175" y="0.0" width="225" height="100"/>
+                                                <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="HYe-gk-jQk"/>
+                                                    <constraint firstAttribute="width" constant="225" id="Iu2-yU-lEh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="42"/>
+                                                <state key="normal" title="Trash">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="trashBtnClicked:" destination="bR2-Ae-Lzd" eventType="touchUpInside" id="Djh-Ac-Loq"/>
+                                                    <segue destination="dmP-hp-pIh" kind="show" identifier="trashSegue" id="hY0-bZ-0sy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="thi-E3-Mxy" firstAttribute="centerX" secondItem="2x1-WW-62V" secondAttribute="centerX" id="eXW-MT-2Pc"/>
+                            <constraint firstItem="thi-E3-Mxy" firstAttribute="centerY" secondItem="2x1-WW-62V" secondAttribute="centerY" id="vCV-mf-dH7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSo-NO-YM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="311"/>
+        </scene>
+        <!--Random Title-->
+        <scene sceneID="tgk-JX-6ce">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="dmP-hp-pIh" customClass="DisplayTrashVC" customModule="Trash_Sorter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wy7-wb-97v"/>
+                        <viewControllerLayoutGuide type="bottom" id="gmp-Hj-a5g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pnw-1s-jrU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-Tk-kQS">
+                                <rect key="frame" x="20" y="64" width="560" height="516"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="trashCell" rowHeight="48" id="bkv-fZ-dwV" customClass="DisplayCell" customModule="Trash_Sorter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="48"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bkv-fZ-dwV" id="H6F-fF-Aub">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trash Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="du8-Ld-aIe">
+                                                    <rect key="frame" x="8" y="13" width="544" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="du8-Ld-aIe" firstAttribute="top" secondItem="H6F-fF-Aub" secondAttribute="topMargin" constant="5" id="97V-3f-4w0"/>
+                                                <constraint firstItem="du8-Ld-aIe" firstAttribute="leading" secondItem="H6F-fF-Aub" secondAttribute="leadingMargin" id="FI1-qt-4vL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="du8-Ld-aIe" secondAttribute="bottom" constant="5.5" id="TJi-Zm-HJj"/>
+                                                <constraint firstItem="du8-Ld-aIe" firstAttribute="trailing" secondItem="H6F-fF-Aub" secondAttribute="trailingMargin" id="fd3-7s-hed"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="trashNameLbl" destination="du8-Ld-aIe" id="Xow-ey-WMl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gmp-Hj-a5g" firstAttribute="top" secondItem="Ymp-Tk-kQS" secondAttribute="bottom" constant="20" id="M1y-gF-CPy"/>
+                            <constraint firstItem="Ymp-Tk-kQS" firstAttribute="leading" secondItem="pnw-1s-jrU" secondAttribute="leadingMargin" id="dTE-XC-HCD"/>
+                            <constraint firstItem="Ymp-Tk-kQS" firstAttribute="top" secondItem="Wy7-wb-97v" secondAttribute="bottom" id="pKl-UG-RXX"/>
+                            <constraint firstItem="Ymp-Tk-kQS" firstAttribute="trailing" secondItem="pnw-1s-jrU" secondAttribute="trailingMargin" id="xns-WY-66C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Random Title" id="J1l-D0-urD"/>
+                    <connections>
+                        <outlet property="navigationTitle" destination="J1l-D0-urD" id="NTg-9f-x9k"/>
+                        <outlet property="tableView" destination="Ymp-Tk-kQS" id="X6u-q7-3et"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Az-uq-SE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2746" y="311"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aM2-tB-nO5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zH3-wa-4Pz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Tq-wp-cZW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vhd-3L-zeS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPb-E8-XLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="311"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="composte1" width="100" height="100"/>
+        <image name="recycle1" width="100" height="100"/>
+        <image name="trash1" width="100" height="100"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hY0-bZ-0sy"/>
+    </inferredMetricsTieBreakers>
+</document>

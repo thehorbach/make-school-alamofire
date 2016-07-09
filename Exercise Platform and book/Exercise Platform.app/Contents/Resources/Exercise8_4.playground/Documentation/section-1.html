@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="bottom.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="prism.css">
+  <script language="javascript" type="text/javascript" src="jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="bottomSection.js"></script>
+  <script language="javascript" type="text/javascript" src="bootstrap.js"></script>
+  <script language="javascript" type="text/javascript" src="prism.js"></script>
+</head>
+<body>
+
+<input id="exerciseId" type="hidden" value="4">
+<input id="chapterId" type="hidden" value="8">
+
+<!-- CONTENT -->
+<div class="content-wrapper">
+  <section class="section">
+
+    <button id="submit" class="btn btn-success btn-sm general" onclick="submit()">Submit</button>
+    
+    <span id="ajax-loading">
+    </span> 
+
+    <button id="nextExercise" class="btn btn-success btn-sm general" onclick="nextExercise()" style="display:none;">Next Exercise</button>
+
+        
+    <button class="btn btn-primary general" type="button" data-toggle="collapse" data-target="#hint0Collapse" aria-expanded="false" aria-controls="hint0Collapse">
+      
+      Hint
+      
+      </button>
+    
+
+    
+    <button class="btn btn-primary general" type="button" data-toggle="collapse" data-target="#examplesCollapse" aria-expanded="false" aria-controls="examplesCollapse">
+    
+    Examples
+    
+    </button>
+    
+    <button id="openPDF" class="btn btn-primary btn-sm general" onclick="openPDF()">View Chapter Theory</button>
+
+      
+    <div class="collapse" id="hint0Collapse">
+      <div class="well">
+        <p>
+        <p>A simple recursive formula we can use is <code>x^y = x * x ^ (y - 1)</code></p>
+
+        </p>
+      </div>
+    </div>
+      
+
+    
+
+    <div class="collapse" id="examplesCollapse">
+      <div class="well example-well ">
+        <table class="table table-collapsed table-bordered">
+          <thead>
+            
+            <th>Function call</th>
+            
+            <th>Function output</th>
+            
+          </thead>
+          
+          <tr>
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">pow(2, 10)
+</code></pre>
+</td>
+            
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">1024
+</code></pre>
+</td>
+            
+            
+          </tr>
+          
+          <tr>
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">pow(3, 3)
+</code></pre>
+</td>
+            
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">27
+</code></pre>
+</td>
+            
+            
+          </tr>
+          
+          <tr>
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">pow(100, 1)
+</code></pre>
+</td>
+            
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">100
+</code></pre>
+</td>
+            
+            
+          </tr>
+          
+          <tr>
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">pow(10, 0)
+</code></pre>
+</td>
+            
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">1
+</code></pre>
+</td>
+            
+            
+          </tr>
+          
+        </table>
+      </div>
+    </div>
+    
+
+    
+    <hr/>
+    
+    
+        <button class="btn btn-info general" type="button" data-toggle="collapse" data-target="#function0Collapse" aria-expanded="false" aria-controls="function0Collapse">
+        Function Definition
+        </button>
+    
+
+      
+    <div class="collapse unselectable" id="function0Collapse">
+      <div class="well">
+        <pre><code class="code-example language-swift">func pow(x: Int, _ y: Int) -> Int
+</code></pre>
+
+      </div>
+    </div>
+      
+  
+    <div id="alert">
+    </div>
+  
+
+    <div id="resultDiv">
+ 
+    </div>
+
+  </section>
+</div>
+<!-- CONTENT -->
+
+</body>
+</html>

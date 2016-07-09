@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>First Steps</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 1</string>
+		<key>Social</key>
+		<string>Just finished learning about variables in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement1</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Buddha of Logic</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 2</string>
+		<key>Social</key>
+		<string>Just finished learning about if statements and boolean logic in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement2</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>The cake is real unless you declare it integer</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 3</string>
+		<key>Social</key>
+		<string>Just finished learning about real numbers in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement3</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Lather, rinse, repeat</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 4</string>
+		<key>Social</key>
+		<string>Just finished learning about loops in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement4</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>String Theorist</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 5</string>
+		<key>Social</key>
+		<string>Just finished learning about strings in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement5</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Collectionist</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 6</string>
+		<key>Social</key>
+		<string>Just finished learning about arrays in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement6</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Mathemagician</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 7</string>
+		<key>Social</key>
+		<string>Just finished learning about functions in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement7</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Yo Dawg</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 8</string>
+		<key>Social</key>
+		<string>Just finished learning about recursion in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement8</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Archmage</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 9</string>
+		<key>Social</key>
+		<string>Just finished learning about closures in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement9</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Code Hipster</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 10</string>
+		<key>Social</key>
+		<string>Just finished learning about tuple and enums in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement10</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Master of Keys and Lord of Values</string>
+		<key>Description</key>
+		<string>Solve all the exercises in Chapter 11</string>
+		<key>Social</key>
+		<string>Just finished learning about dictionaries in Swift https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement11</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Swift Programmer</string>
+		<key>Description</key>
+		<string>Solve all the exercises in the book</string>
+		<key>Social</key>
+		<string>I solved all the exercises from the Swift Programming from Scratch book https://www.weheartswift.com/swift-programming-scratch-100-exercises/</string>
+		<key>Image</key>
+		<string>achievement12</string>
+	</dict>
+</array>
+</plist>

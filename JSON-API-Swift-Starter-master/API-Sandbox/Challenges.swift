@@ -41,9 +41,19 @@ internal func exerciseOne() {
      
      */
     
+    let lastName = userData["results"][0]["name"]["last"].stringValue
+    let title = userData["results"][0]["name"]["title"].stringValue
     
+    let email = userData["results"][0]["email"].stringValue
+    let phone = userData["results"][0]["phone"].stringValue
     
+    let streetName = userData["results"][0]["location"]["street"].stringValue
+    let city = userData["results"][0]["location"]["city"].stringValue
+    let state = userData["results"][0]["location"]["state"].stringValue
+    let postCode = userData["results"][0]["location"]["postcode"].intValue
     
+
+    print("\(firstName) \(lastName) lives at \(streetName) in \(city), \(state), \(postCode). If you want to contact \(title). \(lastName) you can email \(email) or call at \(phone).")
     
 }
 
@@ -68,7 +78,8 @@ internal func exerciseTwo() {
     
     // Uncomment this print statement when you are ready to check your code!
     
-//    print("The top movie is \(topMovie.name) by \(topMovie.rightsOwner). It costs $\(topMovie.price) and was released on \(topMovie.releaseDate). You can view it on iTunes here: \(topMovie.link)")
+    
+    print("The top movie is \(topMovie.name) by \(topMovie.rightsOwner). It costs $\(topMovie.price) and was released on \(topMovie.releaseDate). You can view it on iTunes here: \(topMovie.link)")
 }
 
 internal func exerciseThree() {

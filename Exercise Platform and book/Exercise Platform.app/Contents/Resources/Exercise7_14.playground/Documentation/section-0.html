@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="prism.css">
+  <link rel="stylesheet" type="text/css" href="topSection.css">
+  <script language="javascript" type="text/javascript" src="topSection.js"></script>
+  <script language="javascript" type="text/javascript" src="bootstrap.js"></script>
+  <script language="javascript" type="text/javascript" src="prism.js"></script>
+</head>
+  <body>
+    <!-- CONTENT -->
+  <div class="content-wrapper">
+    <section class="section">
+      <div class="row">
+      <div class="col-md-9">
+      <h3>7.14 Queue</h3>
+
+<p>A queue is a data structure that can perform two operations:</p>
+
+<ul>
+<li><strong>push</strong> which takes a value and adds it at the end of the queue</li>
+<li><strong>pop</strong> which returns the value from the start of the queue and removes it from the queue</li>
+</ul>
+
+<p>Your task is to implement the <code>push</code> and <code>pop</code> operations.
+The most simple way to represent a queue is using an array. Here are some example operations.</p>
+
+<pre><code class="code-example language-swift">// here we define an empty queue
+var queue: [Int] = []
+
+// add 1 in the queue
+push(1, &queue) // queue = [1]
+
+// add 2 in the queue
+push(2, &queue) // queue = [1, 2]
+
+// pop the first element
+pop(&queue) // 1, queue = [2, 3]
+
+// add 3 in the queue
+push(3, &queue) // queue = [2, 3]
+
+// pop the first element
+pop(&queue) // 2, queue = [3]
+
+// pop the first element
+pop(&queue) // 3, queue = []
+
+// pop the first element 
+pop(&queue) // returns nil because there are no elements in the queue
+// queue = []
+</code></pre>
+
+<p>The <code>push</code> function should take two parameters, the <code>number</code> and the <code>queue</code> as an inout parameter.</p>
+
+<p>The <code>pop</code> function should take <code>queue</code> as an inout parameter and return the first number from the queue after removing it. If the queue is empty it should return nil - the result type should be an optional integer(<code>Int?</code>).</p>
+
+      </div>
+      </div>
+    </section>
+  </div>
+    <!-- CONTENT -->
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="bottom.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="prism.css">
+  <script language="javascript" type="text/javascript" src="jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="bottomSection.js"></script>
+  <script language="javascript" type="text/javascript" src="bootstrap.js"></script>
+  <script language="javascript" type="text/javascript" src="prism.js"></script>
+</head>
+<body>
+
+<input id="exerciseId" type="hidden" value="5">
+<input id="chapterId" type="hidden" value="1">
+
+<!-- CONTENT -->
+<div class="content-wrapper">
+  <section class="section">
+
+    <button id="submit" class="btn btn-success btn-sm general" onclick="submit()">Submit</button>
+    
+    <span id="ajax-loading">
+    </span> 
+
+    <button id="nextExercise" class="btn btn-success btn-sm general" onclick="nextExercise()" style="display:none;">Next Exercise</button>
+
+        
+    <button class="btn btn-primary general" type="button" data-toggle="collapse" data-target="#hint0Collapse" aria-expanded="false" aria-controls="hint0Collapse">
+      
+      Hint
+      
+      </button>
+    
+
+    
+    <button class="btn btn-primary general" type="button" data-toggle="collapse" data-target="#examplesCollapse" aria-expanded="false" aria-controls="examplesCollapse">
+    
+    Examples
+    
+    </button>
+    
+    <button id="openPDF" class="btn btn-primary btn-sm general" onclick="openPDF()">View Chapter Theory</button>
+
+      
+    <div class="collapse" id="hint0Collapse">
+      <div class="well">
+        <p>
+        <p>The <code>perimeter</code> of the L-shape is the same as of a rectangle of size <code>width X height</code>.   </p>
+
+<p>To compute the <code>area</code> you can imagine the L-shape as rectangle of size <code>width X height</code> with a rectangle of size <code>(width-x) X (height-y)</code> cut out. </p>
+
+        </p>
+      </div>
+    </div>
+      
+
+    
+
+    <div class="collapse" id="examplesCollapse">
+      <div class="well example-well ">
+        <table class="table table-collapsed table-bordered">
+          <thead>
+            
+            <th>Input</th>
+            
+            <th>Expected values</th>
+            
+          </thead>
+          
+          <tr>
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">var width = 8
+var height = 12
+var x = 4
+var y = 3
+</code></pre>
+</td>
+            
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">perimeter = 40
+area = 60
+</code></pre>
+
+<p><img class='example' src='https://www.weheartswift.com/wp-content/uploads/2015/02/rectangle1-e1423241137674.png'></p>
+</td>
+            
+            
+          </tr>
+          
+          <tr>
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">var width = 8 
+var height = 4
+var x = 2
+var y = 2
+</code></pre>
+</td>
+            
+            
+            
+            <td class="code-td"><pre><code class="code-example language-swift">perimeter = 24
+area = 20
+</code></pre>
+
+<p><img class='example' src='https://www.weheartswift.com/wp-content/uploads/2015/02/rectangle2-e1423241026456.png'></p>
+</td>
+            
+            
+          </tr>
+          
+        </table>
+      </div>
+    </div>
+    
+
+    
+    
+
+      
+  
+    <div id="alert">
+    </div>
+  
+
+    <div id="resultDiv">
+ 
+    </div>
+
+  </section>
+</div>
+<!-- CONTENT -->
+
+</body>
+</html>
